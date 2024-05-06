@@ -1,1 +1,341 @@
 /* ini css */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.icon-nav {
+    border: 1px solid black;
+    height: 35px;
+    width: 45px;
+    background-size: cover;
+    border-radius: 8px;
+}
+.nav-bar>nav>button {
+    height: 32px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    color: #f2f2f2;
+    background-color: #04566E;
+
+}
+
+.content-header {
+    text-align: center;
+}
+
+.content-header>h1 {
+    font-family: system-ui;
+}
+
+.content-header>h3 {
+    font-family: math;
+}
+
+.main-content {
+    display: flex;
+
+}
+
+.main-item>header>h2 {
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 35px;
+}
+
+.main-item>header>h5 {
+    text-align: justify;
+    margin-left: 25%;
+    margin-bottom: 60px;
+    font-weight: 300;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.item-right {
+    background-color: #d8dfe9bc;
+    border: white;
+    border-radius: 8px;
+
+}
+
+.main-item {
+    height: 550px;
+    width: 50%;
+    border: 1px;
+    margin: 18px;
+}
+
+.item-left {
+    height: 400px;
+    width: 90%;
+    border: 1px;
+    margin: 18px;
+}
+
+.item-form {
+    text-align: center;
+}
+
+.item-form>label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+    width: 56%;
+    margin-left: 36px;
+    align-content: center
+}
+
+.item-form>input {
+    height: 46px;
+    width: 51%;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+
+#interests-opt {
+    height: 50px;
+    width: 50%;
+    margin-left: 8px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+
+.send-form-btn>button {
+    height: 46px;
+    width: 50%;
+    margin-left: 8px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+
+/* start slide */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    border-radius: 12px;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -55px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 12%;
+    text-align: center;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.grup-dot{
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/* end slide */
+
+/* start-userProfile */
+.user-slide>img {
+    margin-bottom: -95px;
+    margin-left: 2%;
+    margin-top: 70px;
+    width: 35px;
+    flex: auto;
+}
+
+.user-profile>p {
+    margin-left: 7.6%;
+    margin-bottom: -70px;
+    margin-top: 52px;
+    justify-content: space-between;
+    flex: auto;
+}
+
+#testimoni {
+    text-align: center;
+    margin-top: 70px;
+    margin: 32px;
+    margin-left: -32px;
+    flex: auto;
+}
+
+/* end-userProfile */
+
+/* start-list benefit */
+.list-benefit {
+    margin: 15px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.features-list {
+    list-style-type: none;
+    counter-reset: item;
+}
+
+.features-list li {
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    margin-left: 20px;
+}
+
+.features-list li:before {
+    content: counter(item) " ";
+    counter-increment: item;
+
+    color: #333;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #D8DFE9;
+}
+
+/* end-list benefit */
+
+.item-left-buttom .our-package-content>h1 {
+    align-content: center;
+    height: 95px;
+}
+
+.our-package-content {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 45px;
+    padding: 20px;
+    background-color: #04556e;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    text-align: center;
+    margin: 20px;
+}
+
+.icon {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+}

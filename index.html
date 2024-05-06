@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firdaus - Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- strat nav -->
+    <header class="nav-bar">
+        <div class="icon-nav" ><img src="assets/image-nav.jpg" alt="icon-nav"></div>
+        <nav>
+            <button id="home-btn" class="active" href="#home">Home</button>
+            <button href="#news">Our package</button>
+            <button href="#contact">Call Us</button>
+        </nav>
+    </header>
+    <hr>
+    <!-- end nav -->
+
+    <!-- start header -->
+    <header class="content-header">
+        <h1>You Trusted Travel Agent's</h1>
+        <h3>Your Happiness Is Our Happiness</h3>
+    </header>
+    <!-- end header -->
+
+    <!-- start main content -->
+    <section class="main-content">
+
+        <!-- left-start content -->
+        <!-- start autoslide show -->
+        <div class="main-item item-left">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="assets/tangkuban-perahu.jpg" alt="tangkuban-perahu">
+                    <div id="testimoni" class="text">"tempat wisatanya bagus,cuacanya dingin lagi"</div>
+                    <div class="user-slide">
+                        <img src="assets/user.png" alt="img_user">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Asep</b><br>
+                            Pegawai Negeri,30</p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="assets/bali.jpg" alt="pantai-bali">
+                    <div id="testimoni" class="text">"recomeded banget liburan disini ,apalagi sama pasangan"</div>
+                    <div class="user-slide">
+                        <img src="assets/user.png" alt="img_user">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>kiriana</b><br>
+                            Ibu rumah tangga,22</p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="assets/alun-alun-surabaya.jpeg" alt="alun-alun-surabaya">
+                    <div id="testimoni" class="text">"tempatnya bagus, sangat aesthehic, cocok bersama keluarga"</div>
+                    <div class="user-slide">
+                        <img src="assets/user.png" alt="img_user">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>William Reynolds</b><br>
+                            Content creator,21</p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="assets/japan.png" alt="gn.fuji">
+                    <div id="testimoni" class="text">"sangat indah,sesuai ekspetasi saya"</div>
+                    <div class="user-slide">
+                        <img src="assets/user.png" alt="img_user">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Denny</b><br>
+                            Mahasiswa,20</p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="assets/singapore.jpg" alt="SG">
+                    <div id="testimoni" class="text">"cocok untuk liburan dengan budget pas-pasan" </div>
+                    <div class="user-slide">
+                        <img src="assets/user.png" alt="img_user">
+                    </div>
+                    <div class="user-profile">
+                        <p><b>Dennis</b><br>
+                            Content creator,25</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div class="grup-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- end autoslide show -->
+        <!-- left-end content -->
+
+        <!-- right-start content -->
+        <div class="main-item item-right">
+            <header>
+                <h2>Contact Us</h2>
+                <h5>Sales Akan menghubungi anda 1x24 <br>
+                    Jam setelah data kami terima
+                </h5>
+            </header>
+
+            <section class="item-form">
+                <label for="username">username :</label>
+                <br>
+                <input type="text" name="username" id="username" value="Fist and last name">
+                <br>
+                <label for="email">Email Address :</label>
+                <br>
+                <input type="text" name="email" id="username" value="example@email.com">
+                <br>
+                <label for="interests-opt">What are you interesterd in?</label>
+                <br>
+                <select id="interests-opt">
+                    <option value="" disabled selected>Select option</option>
+                    <option value="option1">Bali</option>
+                    <option value="option2">japan</option>
+                    <option value="option2">Singapore</option>
+                    <option value="option2">Bandung</option>
+                    <option value="option2">Surabaya</option>
+                </select>
+                <div class="send-form-btn">
+                    <button id="send-btn" type="button">Send</button>
+                </div>
+            </section>
+        </div>
+        <!-- right-end content -->
+
+
+    </section>
+    <div class="list-benefit">
+        <h2>Best offer now!</h2>
+        <ul class="features-list">
+            <li>Best price for around the world</li>
+            <li>Saving your time with providing expert <br>
+                advice,or ensuring a hassle-free travel experience</li>
+            <li>Experience with the destination your offer including<br>
+                and cultular insights</li>
+        </ul>
+    </div>
+    <section class="our-package-content">
+        <h1>Our package</h1>
+    </section>
+    <section>
+        <div class="destination-container">
+            <div class="destination">
+                <div class="icon">🌴</div>
+                <h3>Bali</h3>
+                <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+            <div class="destination">
+                <div class="icon">🗾</div>
+                <h3>Japan</h3>
+                <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+            <div class="destination">
+                <div class="icon">🏙️</div>
+                <h3>Singapore</h3>
+                <p>This description supports and extends the bullet point above.</p>
+            </div>
+            <!-- Add more destinations as needed -->
+        </div>
+    </section>
+    <footer>
+        <div class="closing-headline">
+            <h1>Get best traveling experience with us</h1><br>
+            <p>traveling with us, get your best experience, by 
+            getting the best prices to save your time</p>
+        </div>
+        <div class="input-form-btn">
+            <button type="button">CALL TO ACTION</button>
+        </div>
+        <div class="copyright"></div>
+        <p>Term of service</p> <p>Privacy police</p>
+        <p>©2024</p> <p>ByFirdaus</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
