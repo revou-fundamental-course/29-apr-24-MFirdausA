@@ -24,6 +24,15 @@
 
 }
 
+@media only screen and (max-width:480px) {
+    .nav-bar{
+        flex-direction: column;
+        margin-left: auto;
+        display: flex;
+    }
+    
+}
+
 .content-header {
     text-align: center;
 }
@@ -39,6 +48,13 @@
 .main-content {
     display: flex;
 
+}
+
+@media only screen and (max-width:480px) {
+    .main-content{
+        flex-direction: column;
+    }
+    
 }
 
 .main-item>header>h2 {
@@ -61,6 +77,13 @@
     border: white;
     border-radius: 8px;
 
+}
+@media only screen and (max-width:480px) {
+    .item-right{
+    flex: auto;
+    justify-content: center;
+    }
+    
 }
 
 .main-item {
@@ -100,7 +123,7 @@
     border: 1px solid darkgrey;
 }
 
-#interests-opt {
+#optionForm {
     height: 50px;
     width: 50%;
     margin-left: 8px;
@@ -116,7 +139,9 @@
     border-radius: 5px;
     border: 1px solid darkgrey;
 }
-
+.send-form-btn>button:hover{
+    background-color: rgb(107, 107, 107);
+}
 /* start slide */
 * {
     box-sizing: border-box;
@@ -142,34 +167,6 @@ img {
     position: relative;
     margin: auto;
 }
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -55px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Caption text */
 .text {
     color: #000000;
@@ -253,10 +250,12 @@ img {
 }
 
 #testimoni {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 70px;
     margin: 32px;
-    margin-left: -32px;
+    margin-left: -5px;
     flex: auto;
 }
 
@@ -276,8 +275,9 @@ img {
 }
 
 .features-list li {
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 100%;
+    border-top-width: -20px;
+    padding: 8px;
     margin: 10px 0;
     position: relative;
     margin-left: 20px;
@@ -292,9 +292,12 @@ img {
     left: -45px;
     top: 50%;
     transform: translateY(-50%);
-    padding: 15px;
-    border-radius: 50%;
+    padding: 10px;
     background-color: #D8DFE9;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 8px;
+    font-size: 20px;
 }
 
 /* end-list benefit */
@@ -315,21 +318,26 @@ img {
 
 .destination-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .destination {
     text-align: center;
-    margin: 20px;
+    margin: 15px;
+    justify-content: space-between;
 }
 
 .icon {
     background-color: #f0f0f0;
     border-radius: 50%;
     display: inline-block;
-    padding: 20px;
+    padding: 8px;
+    margin: 0 auto 10px;
     font-size: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
@@ -337,5 +345,62 @@ h3 {
 }
 
 p {
-    color: #666;
+    color: #7d7d7d;
+    font-size: 12px;
+}
+
+/* end destination */
+
+/* start footer */
+.closing-headline{
+    text-align: center;
+}
+.closing-headline>p{
+    margin-top: -32px;
+    font-size: 14px;
+}
+.end-content>.btn-cta>button{
+    width: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-family: monospace;
+    border: none;
+}
+a:link{
+    text-decoration: none;
+}
+.end-content>.btn-cta>button>a{
+    color: #000000;
+}
+div.btn-cta{
+    margin-top: 32px;
+    margin-bottom: 32px ;
+    display: flex;
+    justify-content: center;
+}
+.btn-cta>button:hover{
+    background-color: rgb(5, 247, 74);
+}
+div.copyright{
+    display: flex;
+    justify-content: center;
+}
+.copyright p{
+    text-align: center;
+    margin-top: -12px;
+    
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: grey;
+    background-color: white;
+    padding: 20px;
+}
+.footer-link{
+    margin: 5px-;
 }

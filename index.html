@@ -16,6 +16,7 @@
             <button id="home-btn" class="active" href="#home">Home</button>
             <button href="#news">Our package</button>
             <button href="#contact">Call Us</button>
+            
         </nav>
     </header>
     <hr>
@@ -29,7 +30,7 @@
     <!-- end header -->
 
     <!-- start main content -->
-    <section class="main-content">
+    <section id="fillform" class="main-content">
 
         <!-- left-start content -->
         <!-- start autoslide show -->
@@ -96,8 +97,6 @@
                             Content creator,25</p>
                     </div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
             <div class="grup-dot">
                 <span class="dot"></span>
@@ -120,17 +119,17 @@
             </header>
 
             <section class="item-form">
-                <label for="username">username :</label>
+                <label for="form-username">username :</label>
                 <br>
-                <input type="text" name="username" id="username" value="Fist and last name">
+                <input type="text" id="form-username" placeholder="First and last name" !required >
                 <br>
-                <label for="email">Email Address :</label>
+                <label for="formEmail">Email Address :</label>
                 <br>
-                <input type="text" name="email" id="username" value="example@email.com">
+                <input type="email" id="formEmail" placeholder="example@mail.com" !required  >
                 <br>
-                <label for="interests-opt">What are you interesterd in?</label>
+                <label for="optionForm">What are you interesterd in?</label>
                 <br>
-                <select id="interests-opt">
+                <select id="optionForm" >
                     <option value="" disabled selected>Select option</option>
                     <option value="option1">Bali</option>
                     <option value="option2">japan</option>
@@ -160,43 +159,64 @@
     <section class="our-package-content">
         <h1>Our package</h1>
     </section>
-    <section>
-        <div class="destination-container">
-            <div class="destination">
-                <div class="icon">🌴</div>
-                <h3>Bali</h3>
-                <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik.</p>
+        <section class="package-tour">
+            <div class="destination-container">
+                <div class="destination">
+                    <div class="icon">🌴</div>
+                    <h4>Bali</h4>
+                    <p>Travel dan wisata di Bali. temukan hal baru wisata di bali.</p>
             </div>
             <div class="destination">
                 <div class="icon">🗾</div>
-                <h3>Japan</h3>
-                <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik.</p>
+                <h4>Japan</h4>
+                <p>Travel dan wisata di Japan. kunjungi .sekarang juga.</p>
             </div>
             <div class="destination">
                 <div class="icon">🏙️</div>
-                <h3>Singapore</h3>
-                <p>This description supports and extends the bullet point above.</p>
+                <h4>Singapore</h4>
+                <p>Pengen wisata dan travel tapi budget pas-pasan ke singapore aja. </p>
+            </div>
+            <div class="destination">
+                <div class="icon">🏙️</div>
+                <h4>Bandung</h4>
+                <p>Pengen ke tempat yang adem adem <br> dengan kulinernya bisa ke bandung. </p>
+            </div>
+            <div class="destination">
+                <div class="icon">🏙️</div>  
+                <h4>surabaya</h4>
+                <p>Liburan bersama keluarga tercinta <br> sambil belajar sejarah bisa ke surabaya.</p>
+            </div>
+            <div class="destination">
+                <div class="icon">🏙️</div>
+                <h4>and many more</h4>
+                <p>ada banyak pilihan lain wisata dan travel <br> bersama kami. pesan sekarang!</p>
             </div>
             <!-- Add more destinations as needed -->
         </div>
     </section>
-    <footer>
+    <footer class="end-content">
         <div class="closing-headline">
             <h1>Get best traveling experience with us</h1><br>
             <p>traveling with us, get your best experience, by 
             getting the best prices to save your time</p>
         </div>
-        <div class="input-form-btn">
+        <div class="btn-cta">
             <button type="button">CALL TO ACTION</button>
         </div>
-        <div class="copyright"></div>
-        <p>Term of service</p> <p>Privacy police</p>
-        <p>©2024</p> <p>ByFirdaus</p>
+        
+        <hr>
+        <div class="copyright">
+            <a class="footer-link">Terms of Service</a>
+            <a class="footer-link">Privacy Policy</a>
+            <br>
+        <div class="copyright-by">
+            <p>© 2019  ByFirdaus</p>
+        </div>
+            
+        </div>
 
     </footer>
-
-
-    <script src="js/script.js"></script>
+    
 </body>
-
+<script src="js/script.js"></script>
 </html>
